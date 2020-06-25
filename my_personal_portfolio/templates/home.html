@@ -21,10 +21,12 @@
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="{% static 'css/styles-3.css' %}">
     <link id="theme-style" rel="stylesheet" href="{% static 'css/custom.css' %}">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
     <![endif]-->
 </head>
 
@@ -114,11 +116,12 @@ and effecient way out of the given situation. Lover of innovation and everything
 
                         <p>Technologies and Language used:</p>
                         <ul>
+							 <li>Data Analysis</li>
+                            <li>Data Visualization: Fusioncharts</li>
                             <li>Backend framework : Django</li>
                             <li>Language: Python</li>
                             <li>Frontend Support: HTML, CSS, JS</li>
-                            <li>Data Analysis</li>
-                            <li>Data Visualization: Fusioncharts</li>
+                           
                             
                         </ul>
                     </div>
@@ -134,7 +137,7 @@ and effecient way out of the given situation. Lover of innovation and everything
         <section id="education-section" class="education-section section">
             <h2 class="section-title">Education</h2>
             <div class="row">
-                <div class="item col-xs-12 col-sm-6">
+                <div class="item col-xs-24 col-sm-6">
                     <div class="item-inner">
                         <h3 class="degree">B.E in Computer Engineering</h3>
                         <div class="education-body"><br>
@@ -150,7 +153,7 @@ and effecient way out of the given situation. Lover of innovation and everything
                     </div><!--//item-inner-->
                 </div><!--//item-->
                
-                <div class="item col-xs-12 col-sm-6">
+                <div class="item col-xs-24 col-sm-6">
                     <div class="item-inner">
                         <h3 class="degree">High School Degree</h3>
                         <div class="education-body"><br>
@@ -176,6 +179,15 @@ and effecient way out of the given situation. Lover of innovation and everything
             <div class="top-skills">
                 <h3 class="subtitle">Top Skills</h3>
                 <div class="row">
+				 <div class="item col-xs-12 col-sm-4">
+                        <div class="item-inner">
+                            <h4 class="skill-name">Data Analysis and Visualization</h4>
+                            <div class="level">Medium, 8 months</div>
+                            <div class="desc">
+                                Started as a hobbie,Then went deeper into the feild and started liking it. Have learnt the diffrent Visualization techniques using plotly, dash, etc. Have many certifications regarding the same signifying the crediblity.
+                            </div>
+                        </div><!--//item-inner-->
+                    </div><!--//item-->
                     <div class="item col-xs-12 col-sm-4">
                         <div class="item-inner">
                             <h4 class="skill-name">Python &amp; Django</h4>
@@ -185,15 +197,7 @@ and effecient way out of the given situation. Lover of innovation and everything
                             </div>
                         </div><!--//item-inner-->
                     </div><!--//item-->
-                    <div class="item col-xs-12 col-sm-4">
-                        <div class="item-inner">
-                            <h4 class="skill-name">Data Analysis and Visualization</h4>
-                            <div class="level">Medium, 8 months</div>
-                            <div class="desc">
-                                Started as a hobbie,Then went deeper into the feild and started liking it. Have learnt the diffrent Visualization techniques using plotly, dash, etc. Have many certifications regarding the same signifying the crediblity.
-                            </div>
-                        </div><!--//item-inner-->
-                    </div><!--//item-->
+                   
                     <div class="item col-xs-12 col-sm-4">
                         <div class="item-inner">
                             <h4 class="skill-name">Internet of Things (IoT)</h4>
@@ -238,7 +242,7 @@ and effecient way out of the given situation. Lover of innovation and everything
         <section id="testimonials-section" class="testimonials-section section">
             <h2 class="section-title">Achievements</h2>
 
-            <div id="testimonials-carousel" class="testimonials-carousel carousel slide" data-interval="8000">
+            <div id="testimonials-carousel" class="testimonials-carousel carousel slide" data-ride="carousel">
 
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -288,6 +292,12 @@ and effecient way out of the given situation. Lover of innovation and everything
                     </div><!--//item-->
 
                 </div><!--//carousel-inner-->
+				<a class=" testimonials-carousel carousel-control-prev" href="#testimonials-carousel" data-slide="prev">
+   		<span class="testimonials-carousel carousel-control-prev-icon"></span>
+  	</a>
+  	<a class="testimonials-carousel carousel-control-next" href="#testimonials-carousel" data-slide="next">
+    	<span class=" testimonials-carousel carousel-control-next-icon"></span>
+ 	 </a>
             </div><!--//testimonials-carousel-->
 
         </section><!--//section-->
@@ -299,87 +309,62 @@ and effecient way out of the given situation. Lover of innovation and everything
                 
             </ul><!--//filters-->
             <div class="items-wrapper isotope row">
-                    <div class="item backend frontend col-md-6 col-xs-8 ">
+                    <div class="item backend frontend col-md-6 col-xs-12 ">
                     <div  class="item-inner">
                         <figure class="figure">
                             <img class="img-responsive" src="{% static 'images/pothole.jpg' %}" alt="" />
                         </figure>
-                        <div class="content text-left">
+                        <div style = "padding-left : 25px; padding-bottom : 30px ;padding-right : 25px;">
                             <h3 class="sub-title">Pothole Detection and Prediction</a></h3>
-                            <div class="meta"><u> Technology: Python, Machine Learning, NodeMCU, Sensors.</u><br><br>
-                                Movie Success prediction is a prediction of how much movie gets success using some previous data and statistics.
-                               <br><br> What kind of movie should be made to attract people
-· What is the genre and type of movie(comedy, acton, thriller).
-· What age group people like which kind of movie
-· Who are the lead roles in the movie.
-                                    </div>
-                         
-                           
-                            <div class="action"><a href="https://medium.com/@mehulkothari05/movie-success-prediction-a67d871a7b1">Source:Medium</a></div>
-                        </div><!--//content-->
-                        <a class="link-mask" href="https://medium.com/@mehulkothari05/movie-success-prediction-a67d871a7b1"></a>
+                            <div class="meta"><u> Technology: Python, Machine Learning, NodeMCU, Sensors, Arduino IDE.</u><br><br>
+                               In today’s world, the most common problem found while travelling is Potholes. Many of the accidents happen due to potholes on the roads. So, we try to build up a smart solution to the problem
+                               <br><br> The optimal distribution of resources for road repairs is possible by providing the availability of comprehensive and objective real time data about the state of the roads. 
+                                    <br><br>Various sensors are used in the system to detect the pothole and send the live dataeed to a well maintained cloud based database.
+									</div>
+             </div><!--//content-->
+                        
                     </div><!--//item-inner-->
                 </div><!--//item-->
-                <div class="item backend frontend col-md-6 col-xs-8 ">
+                <div  class="item backend frontend col-md-6 col-xs-12 ">
                     <div  class="item-inner">
                         <figure class="figure">
                             <img class="img-responsive" src="{% static 'images/fvrs.png' %}" alt="" />
                         </figure>
-                        <div class="content text-left">
-                            <h3 class="sub-title"><a href="https://medium.com/@mehulkothari05/smart-baby-stroller-system-3f6b4f49476a">Finger Vein Recognition System</a></h3>
-                            <div class="meta"><u>Technology used :Matlab, Image Processing,HTML, CSS, Django, Python</u><br><br>
-                                Parent can do live streaming with their child at any moment whenever they want
-                                · Also can track the emotions of baby and can take possible actions<br>
-                                · Provided sensors can track all information about weather
-                                · On the basis of information of weather, this app can be integrated with IOT to take possible actions such as activate AC
+                        <div style = "padding-left : 25px; padding-bottom : 30px ;padding-right : 25px;">
+                            <h3 class="sub-title">Finger Vein Recognition System</a></h3>
+                            <div class="meta"><u>Technology used :Matlab, Infra-red imaging, Image Processing, HTML, CSS, DJANGO, Python</u><br><br>
+                                The main problem in security of the transactions through the debit or credit cards is the PIN security. There are many malpractises and frauds occuring and this is a major concern for privacy and security of the money for the beholder.
+                                <br><br>So instead of the PIN or the OTP, the finger vein patterns can not be replecated and can only be xtracted using and infra red camera.
+                                <br>Also, the vein patterns dispose off, once the person dies and it will help the elderly , who may not be able to remember the PIN's and OTP's.
                                 </div>
-                            
-                            
-                            <div class="action"><a href="https://medium.com/@mehulkothari05/smart-baby-stroller-system-3f6b4f49476a">Closed source</a></div>
+
                         </div><!--//content-->
-                        <a class="link-mask" href="https://medium.com/@mehulkothari05/smart-baby-stroller-system-3f6b4f49476a"></a>
+                  
                     </div><!--//item-inner-->
                 </div><!--//item-->
-                <div class="item backend frontend col-md-6 col-xs-8 ">
+                <div  class="item backend frontend col-md-12 col-xs-12 ">
                     <div class="item-inner">
                         <figure class="figure">
-                            <img class="img-responsive" src="{% static 'images/veh.png' %}" alt="" />
+                            <img class="img-responsive" src="{% static 'images/bbba.png' %}" alt="" />
                         </figure>
-                        <div class="content text-left">
-                            <h3 class="sub-title"><a href="https://medium.com/@mehulkothari05/matrimonial-website-9cd5247f477d">Vehicle Number Plate Recognition System</a></h3>
-                            <div class="meta"><u>Technology used : Coding in PHP, MYSQL,HTML ,CSS ,JavaScript</u><br><br>
-                                As you will visit the homepage you will get what it is. It is a matrimonial website for Brahman Parivar or samaj where young and adult people of brahman samaj can register themselves on this site with the proper and correct details.
-                                Then they have to approve them self and can search for their soulmate.</div>
-                                <br>
+                        <div style = "padding-left : 25px; padding-bottom : 30px ;padding-right : 25px;" >
+                            <h3  class="sub-title">Vehicle Number Plate Recognition System</a></h3>
+                            <div class="meta"><u>Technology used : Coding in Python, Tesseract OCR, OpenCV, Image Processing</u><br><br>
+							OCR stands for Optical Character Recognition<br>Optical character recognition or optical character reader (OCR) is the electronic or mechanical conversion of images. We have used this technique to read the number plates of the vehilces.
+							<br><br>The tesseract library is an optical character recognition (OCR) tool for Python. That is, it can recognize and read the text embedded from any image. So we’ll use it for identifying the characters inside the number plate.
+							<br><br>Using Image processing, the ROI of the image i.e The number plate is extracted nad then using Tesseract OCR, the contents of plate are extracted and stored in a database.
+                               </div>
+ 
                             
-                            <div class="action"><a href="https://medium.com/@mehulkothari05/matrimonial-website-9cd5247f477d"> source:Medium</a></div>
+                            
                         </div><!--//content-->
-                        <a class="link-mask" href="https://medium.com/@mehulkothari05/matrimonial-website-9cd5247f477d"></a>
+
                     </div><!--//item-inner-->
                 </div><!--//item-->
                
            
 
-                <div class="item frontend col-md-6 col-xs-8 ">
-                    <div class="item-inner">
-                        <figure class="figure">
-                            <img class="img-responsive" src="{% static 'images/portfolio/p8.png' %}" alt="" />
-                        </figure>
-                        <div class="content text-left">
-                            <h3 class="sub-title"><a href="https://github.com/mehulk05/Know-Your-Disease">Know Your Disease</a></h3>
-                            <div class="meta"><u> Coding in HTML ,CSS ,PHP, Bootstrap,MYSQL</u><br><br>
-                                Website on “Know Your Disease” which will show users nearby Hospitals, chemist, labs, their products
-along with their ongoing offers and events.
-• Also user can get details of his probable disease on his list of symptoms and can make appointment to
-doctors and lab technician and buy medicine online.<br>
-                                </div>
-                           
-                            <div class="action"><a href="https://github.com/mehulk05/Know-Your-Disease">View on Github</a></div>
-                        </div><!--//content-->
-                        <a class="link-mask" href="https://github.com/mehulk05/Know-Your-Disease"></a>
-                    </div><!--//item-inner-->
-                </div><!--//item-->
-
+                
                 
 
             </div><!--//item-wrapper-->
@@ -483,12 +468,13 @@ doctors and lab technician and buy medicine online.<br>
                     <p>I'm currently working fulltime as an Intern for <a href="http://einsehen.com" target='_blank'>Einsehen</a>, but I'm always open to new opportunities that let me help as much as I can on other projects.</p>
                     <p><strong>I can help with the following:</strong></p>
                     <ul class="list-unstyled service-list">
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Back-end development with Django/Python</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Front-end development with HTML5 , CSS, JS </li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Data Analysis and Mining</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Data Visualization and plotting</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Devloping IoT applications using wireless sensor networks</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>Image Processing using OpenCV and Matlab</li>
+					 <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Data Analysis and Mining</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Data Visualization and plotting</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Devloping IoT applications using wireless sensor networks</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Back-end development with Django/Python</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Front-end development with HTML5 , CSS, JS </li>
+                       
+                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Image Processing using OpenCV and Matlab</li>
                     </ul>
                     <p>Drop me a line at <a href="mailto:nkhaneja09@gmail.com">nkhaneja09@gmail.com</a> or call me at <a href="tel:+918762287946">+918762287946</a></p>
                     <ul class="social list-inline">
@@ -506,7 +492,7 @@ doctors and lab technician and buy medicine online.<br>
 
     <footer class="footer text-center">
         <div class="container">
-            <small class="copyright">Copyright @<a href="#">Nikhil K. Khaneja </a></small>
+            <large class="copyright">Copyright @<a href="#">Nikhil K. Khaneja </a></large>
         </div><!--//container-->
     </footer>
 
