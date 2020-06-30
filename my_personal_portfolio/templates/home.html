@@ -17,7 +17,10 @@
     <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.min.css' %}">
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="{% static 'plugins/font-awesome/css/font-awesome.css' %}">
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="{% static 'css/styles-3.css' %}">
     <link id="theme-style" rel="stylesheet" href="{% static 'css/custom.css' %}">
@@ -30,6 +33,20 @@
     <![endif]-->
 </head>
 
+<style>
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23e5e5e5' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    height: 60px;
+    width: 60px;
+
+    }
+    .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23e5e5e5' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    height: 60px;
+    width: 60px;
+    }
+</style>	
+	
 <body>
 
     <header class="header">
@@ -99,7 +116,7 @@ and effecient way out of the given situation. Lover of innovation and everything
                 <div class="item">
                     <div class="work-place">
                         <p>
-                            <h3 class="place"><b>Intern at Einsehen</b></h3>
+                            <h3 class="place"><b>Data Science intern at Einsehen</b></h3>
                         </p>
                         <div class="location">
                             <i class="fa fa-map-marker" aria-hidden="true"></i>Munich, Germany</div>
@@ -137,7 +154,7 @@ and effecient way out of the given situation. Lover of innovation and everything
         <section id="education-section" class="education-section section">
             <h2 class="section-title">Education</h2>
             <div class="row">
-                <div class="item col-xs-24 col-sm-6">
+                <div class="item col-xs-24 col-sm-12">
                     <div class="item-inner">
                         <h3 class="degree">B.E in Computer Engineering</h3>
                         <div class="education-body"><br>
@@ -153,7 +170,7 @@ and effecient way out of the given situation. Lover of innovation and everything
                     </div><!--//item-inner-->
                 </div><!--//item-->
                
-                <div class="item col-xs-24 col-sm-6">
+                <div class="item col-xs-24 col-sm-12">
                     <div class="item-inner">
                         <h3 class="degree">High School Degree</h3>
                         <div class="education-body"><br>
@@ -292,11 +309,11 @@ and effecient way out of the given situation. Lover of innovation and everything
                     </div><!--//item-->
 
                 </div><!--//carousel-inner-->
-				<a class=" testimonials-carousel carousel-control-prev" href="#testimonials-carousel" data-slide="prev">
-   		<span class="testimonials-carousel carousel-control-prev-icon"></span>
+				<a style = "margin-left : -150px;" class=" carousel-control-prev" href="#testimonials-carousel" data-slide="prev">
+   		<span class=" carousel-control-prev-icon"></span>
   	</a>
-  	<a class="testimonials-carousel carousel-control-next" href="#testimonials-carousel" data-slide="next">
-    	<span class=" testimonials-carousel carousel-control-next-icon"></span>
+  	<a style = "margin-right : -145px;" class=" carousel-control-next" href="#testimonials-carousel" data-slide="next">
+    	<span class=" carousel-control-next-icon"></span>
  	 </a>
             </div><!--//testimonials-carousel-->
 
