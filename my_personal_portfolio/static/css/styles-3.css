@@ -6,6 +6,7 @@
  * Twitter: @3rdwave_themes
 */
 /* ======= Base ======= */
+{% load static %}
 body {
   font-family: 'Roboto', sans-serif;
   color: #666;
@@ -25,7 +26,7 @@ h6 {
   font-weight: 500;
 }
 a {
-  color: #009688;
+  color: #000000;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -101,7 +102,8 @@ a.btn:hover {
   font-weight: normal;
 }
 .header {
-  background: #009688;
+  background-image : url('https://maxgoodridge.com/images/code.jpg');
+  background-position : 0 85px;
   color: #fff;
 }
 .header a {
@@ -114,6 +116,22 @@ a.btn:hover {
 }
 .header .social {
   margin-bottom: 0;
+}
+.fa{
+	 font-size: 35px;
+  width: 70px;
+  text-align: center;
+
+}
+.fa-map-marker
+{
+  width: 15px;
+	font-size : 20px;
+}
+.fa-check
+{
+  width: 25px;
+	font-size : 20px;
 }
 .header .social a {
   color: rgba(255, 255, 255, 0.8);
@@ -154,14 +172,14 @@ a.btn:hover {
 }
 .header .profile-image {
   position: absolute;
-  width: 160px;
-  height: 160px;
-  top: -80px;
-  margin-left: -80px;
+  width: 200px;
+  height: 200px;
+  top: -100px;
+  margin-left: -110px;
   left: 50%;
 }
 .header .name {
-  font-size: 48px;
+  font-size: 100px;
   margin-bottom: 15px;
   letter-spacing: 0.5px;
 }
@@ -172,21 +190,25 @@ a.btn:hover {
   margin-bottom: 30px;
 }
 .header .intro {
-  background: #007d71;
+  background-image : url('https://maxgoodridge.com/images/code.jpg');
   padding-top: 90px;
-  padding-bottom: 60px;
+
+  padding-bottom: 20px;
   position: relative;
-  font-size: 16px;
+  font-size: 20px;
+  background-position : 0 -119px;
+  font-weight: bold;
 }
 .header .profile {
   max-width: 800px;
   margin: 0 auto;
 }
 .header .contact-info {
-  background: #00635a;
+  background-image : url('https://maxgoodridge.com/images/code.jpg');
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 16px;
+  background-position : 0 -547px;
 }
 .header .contact-info ul {
   margin-bottom: 0;
@@ -213,7 +235,7 @@ a.btn:hover {
   position: relative;
 }
 .page-nav-wrapper {
-  background: #004a43;
+  background: #000000;
   padding-top: 20px;
   padding-bottom: 20px;
   position: absolute;
@@ -229,7 +251,7 @@ a.btn:hover {
   left: 0;
   width: 100%;
   z-index: 100;
-  background: #009688;
+  background: #000000;
 }
 .page-nav-wrapper a {
   color: rgba(255, 255, 255, 0.6);
@@ -298,7 +320,7 @@ a.btn:hover {
   text-align: center;
 }
 .timeline {
-  border-left: 3px solid #009688;
+  border-left: 3px solid #000000;
   border-bottom-right-radius: 2px;
   border-top-right-radius: 2px;
   position: relative;
@@ -329,7 +351,7 @@ a.btn:hover {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   background: #fff;
-  border: 3px solid #009688;
+  border: 3px solid #000000;
 }
 .timeline .item:after {
   content: "";
@@ -347,7 +369,7 @@ a.btn:hover {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  background: #009688;
+  background: #000000;
   z-index: 10;
 }
 .timeline .work-place {
@@ -375,7 +397,7 @@ a.btn:hover {
 }
 .timeline .job-meta .title {
   font-size: 18px;
-  color: #009688;
+  color: #000000;
 }
 .timeline .job-meta .time {
   color: #8a8a8a;
@@ -391,7 +413,7 @@ a.btn:hover {
 }
 .education-section .degree {
   font-size: 18px;
-  color: #009688;
+  color: #000000;
   margin-top: 0;
   margin-bottom: 0px;
 }
@@ -418,7 +440,7 @@ a.btn:hover {
 }
 .certification-section .degree {
   font-size: 18px;
-  color: #009688;
+  color: #000000;
   margin-top: 0;
   margin-bottom: 0px;
 }
@@ -521,7 +543,7 @@ a.btn:hover {
   width: 36px;
   height: 36px;
   display: inline-block;
-  background: #009688;
+  background: #000000;
   color: #fff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -548,7 +570,7 @@ a.btn:hover {
   margin-right: 5px;
 }
 .testimonials-section .carousel-indicators li.active {
-  background-color: #009688;
+  background-color: #000000;
   width: 10px;
   height: 10px;
   margin: 0;
@@ -576,14 +598,14 @@ a.btn:hover {
   margin-right: 0;
 }
 .portfolio-section .filters .type.active {
-  color: #009688;
-  border-bottom: 2px solid #009688;
+  color: #000000;
+  border-bottom: 2px solid #000000;
 }
 .portfolio-section .item {
   margin-bottom: 30px;
 }
 .portfolio-section .item-inner {
-  background: #009688;
+  background: #000000;
   color: #fff;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -599,7 +621,7 @@ a.btn:hover {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
 }
 .portfolio-section .item-inner:hover {
-  background: #00a091;
+  background: #252525;
 }
 .portfolio-section .item-inner:hover img {
   -webkit-opacity: 0.9;
@@ -660,7 +682,7 @@ a.btn:hover {
   margin-bottom: 15px;
 }
 .contact-section .service-list .fa {
-  color: #009688;
+  color: #000000;
 }
 .contact-section .social {
   margin-bottom: 0;
@@ -678,7 +700,7 @@ a.btn:hover {
   color: #8a8a8a;
 }
 .contact-section .social a:hover {
-  color: #009688;
+  color: #000000;
 }
 .footer .container {
   padding: 30px;
@@ -895,7 +917,7 @@ a.btn:hover {
   background-color: #03A9F4;
 }
 .config-panel #color-options li.theme-3 a {
-  background-color: #009688;
+  background-color: #000000;
 }
 .config-panel #color-options li.theme-4 a {
   background-color: #4CAF50;
