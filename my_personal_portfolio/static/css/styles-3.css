@@ -716,6 +716,9 @@ a.btn:hover {
     margin: 0 auto;
     text-align: center;
   }
+  .header{
+  	  background-position : -200px 0;
+  }
   .header .actions {
     position: static;
     margin: 0 auto;
@@ -732,16 +735,30 @@ a.btn:hover {
     margin-bottom: 0;
   }
   .header .name {
-    font-size: 36px;
+    font-size: 50px;
   }
   .header .title {
     font-size: 22px;
+  }
+  .header .profile-image {
+	 width: 170px;
+  height: 170px;
+    margin-left: -90px;
+  }
+
+  .header .intro{
+  	   background-position : -200px -133px;
+	   font-size : 20px;
+  }
+    .header .contact-info{
+  	   background-position : -200px -595px;
   }
   .header .contact-info li {
     margin-right: 0;
     margin-bottom: 15px;
     font-size: 14px;
-    width: 100%;
+    width: 15%;
+
     display: inline-block;
   }
   .header .contact-info li:last-child {
