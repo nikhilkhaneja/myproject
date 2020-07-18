@@ -1,18 +1,17 @@
-{% load static %}
+
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-    <title>Nikhil Khaneja</title>
-	      <link rel = "icon" href =  
+    <title>Nikhil's Resume</title>
+	 <link rel = "icon" href =  
 "https://static.wixstatic.com/media/0a1db9_ec90d8bcb713400b8edb86572202bf87~mv2.jpg/v1/fit/w_2500,h_1330,al_c/0a1db9_ec90d8bcb713400b8edb86572202bf87~mv2.jpg" 
-" 
+
         type = "image/x-icon">
 
     <!-- Meta -->
     <meta charset="utf-8">
-	<meta name="theme-color" content="#000000">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=0.8">
     <meta name="description" content="Responsive Resume/CV／Portfolio Template">
@@ -20,16 +19,16 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
-    <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.min.css">
     <!-- Plugins CSS -->
-    <link rel="stylesheet" href="{% static 'plugins/font-awesome/css/font-awesome.css' %}">
+    <link rel="stylesheet" href="/static/plugins/font-awesome/css/font-awesome.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="{% static 'css/styles-3.css' %}">
-    <link id="theme-style" rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <link id="theme-style" rel="stylesheet" href="/static/css/styles-3.css">
+    <link id="theme-style" rel="stylesheet" href="/static/css/custom.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -48,10 +47,50 @@
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23252525' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
    
     }
+	.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 15px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  width : 100%;
+  margin: 0 auto;
+}
+
+.button span {
+  cursor: pointer;
+  display: inlineblock;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 </style>	
 	
 <body>
-
+  <section id="header-section">
     <header class="header">
         <div class="top-bar container-fluid">
             <!--<div class="actions">
@@ -61,9 +100,9 @@
            
         </div><!--//top-bar-->
 
-        <div class="intro">
-            <div class="container text-center">
-                <img class="profile-image" src="{% static 'images/three.jpg' %}" alt="Mehul's profile image">
+        <div class="intro ">
+            <div class="container text-center ">
+                <img class="profile-image" src="/static/images/three.jpg" alt="Nikhil's profile image">
                 <h1 class="name">Nikhil K. Khaneja</h1>
                 <div class="title">Data Scientist at Einsehen | IoT Enthusiast</div>
                 <div class="profile">
@@ -82,7 +121,7 @@ and effecient way out of the given situation. Lover of innovation and everything
 					 <li><a href="https://linkedin.com/in/nikhil-khaneja-3001"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                 <li><a href="https://instagram.com/_nikhilkhaneja_"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
   
-					 <li><a href="mailto:nkhaneja09@gmail.com""><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+					 <li><a href="mailto:nkhaneja09@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
                          <li><a href="https://facebook.com/khanejanikhil"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
                 <li><a href="https://github.com/nikhilkhaneja"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
                   
@@ -94,6 +133,7 @@ and effecient way out of the given situation. Lover of innovation and everything
             <div id="page-nav-wrapper" class="page-nav-wrapper text-center">
                 <div class="container">
                     <ul id="page-nav" class="nav page-nav list-inline">
+						<li><a class="scrollto" href="#header-section">Home</a></li>
                         <li><a class="scrollto" href="#experiences-section">Experiences</a></li>
                         <li><a class="scrollto" href="#education-section">Education</a></li>
                         <li><a class="scrollto" href="#skills-section">Skills</a></li>
@@ -107,25 +147,26 @@ and effecient way out of the given situation. Lover of innovation and everything
         </div>
 
     </header><!--//header-->
-
-    <div class="wrapper container col-xs-24">
-        <section id="experiences-section" class="experiences-section section">
-            <h2 class="section-title">Work Experiences</h2>
+</section>
+<div style = "background : url(https://crossfitbbros.com/bbros-1/wp-content/uploads/2016/05/black-wall-texture-19.jpg);  background-size: contain;" class="row">
+    <div class="wrapper container col-md-10 col-xs-8 ">
+        <section id="experiences-section"  class="experiences-section section" >
+            <h1 style = "font-size : 35px;" class="section-title">Work Experiences</h1>
             <div class="timeline">
                 
 
                 <div class="item">
                     <div class="work-place">
                        <p>
-                            <h3 class="place"><b>Data Science intern at Einsehen</b></h3>
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>Munich, Germany
+                            <h3 style = "font-size : 30px;"class="place"><b>Data Science intern at Einsehen</b></h3>
+                            <i  class="fa fa-map-marker" aria-hidden="true"></i>Munich, Germany
                         </p>
                     <div class="job-meta">
-                        <div class="title">Intern</div>
+                        <div style = "font-size : 25px;" class="title">Intern</div>
                         <div class="time">April, 2020 - Present</div>
                     </div>
                     <!--//job-meta-->
-                    <div class="job-desc">
+                    <div style = "font-size : 18px;" class="job-desc">
                         <p>Working as a Data Scientist.<br>
                             Working as as intern on producing analytical solution using opensource technologies with opensource data.<br>
 							Developed a full stack weeb application to build a dashboard for the data.</p>
@@ -151,34 +192,34 @@ and effecient way out of the given situation. Lover of innovation and everything
         </section><!--//section-->
 
         <section id="education-section" class="education-section section">
-            <h2 class="section-title">Education</h2>
+            <h2 style = "font-size : 35px;" class="section-title">Education</h2>
             <div class="row">
                 <div class="item col-xs-24 col-sm-12">
                     <div class="item-inner">
-                        <h3 class="degree">B.E in Computer Engineering</h3>
-                        <div class="education-body"><br>
+                        <h3 style = "font-size : 28px;" class="degree">B.E in Computer Engineering</h3>
+                        <div style = "font-size : 22px;margin-top : -30px;" class="education-body"><br>
                            PES Institute of Technology
                         </div><!--//education-body-->
-						<div class="location">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>Bengaluru, India</div>
-                        <div class="time">2017 - Present</div>
-                        <div class="desc">
+				
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>Bengaluru, India
+                        <div style = "font-size : 18px;"class="time">2017 - Present</div>
+                        <div style = "font-size : 17px;"class="desc">
                             -PES Institute of Technology is an affiliation of Visvesvarya Technological University, Belgaum. The college offers 6 BE courses, 2 M.Tech Courses, and 1 MBA program with various specializations.<br>
                          -Currently pursuing 6th Semester B.E in Computer Engineering with <b>8.6</b> CGPA.
                         </div>
                     </div><!--//item-inner-->
                 </div><!--//item-->
                
-                <div class="item col-xs-24 col-sm-12">
+                <div  class="item col-xs-24 col-sm-12">
                     <div class="item-inner">
-                        <h3 class="degree">High School Degree</h3>
-                        <div class="education-body"><br>
+                        <h3 style = "font-size : 28px;"class="degree">High School Degree</h3>
+                        <div style = "font-size : 22px;margin-top : -30px;"class="education-body"><br>
                           Prakash Higher Secondary School
                         </div><!--//education-body-->
-						<div class="location">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>Ahmedabad, India</div>
-                        <div class="time">2006 - 2017</div>
-                        <div class="desc">
+						
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>Ahmedabad, India
+                        <div style = "font-size : 18px;"class="time">2006 - 2017</div>
+                        <div style = "font-size : 17px;"class="desc">
                           -Prakash Higher Secondary School, with definite aims and objectives, was founded in 1971.The High School was mainly focus on the bases of Science ie. Computer Science, Mathematics, Physics, Chemistry.<br>
 						  -Graduated with a aggreagate of <b>90.8%</b> in class XII.
                         </div>
@@ -190,25 +231,25 @@ and effecient way out of the given situation. Lover of innovation and everything
         </section><!--//section-->
 
 
-        <section id="skills-section" class="skills-section section text-center">
-            <h2 class="section-title">Professional Skills</h2>
-            <div class="top-skills">
-                <h3 class="subtitle">Top Skills</h3>
+        <section id="skills-section" class="skills-section section text-center" >
+            <h2 class="section-title" style = "font-size : 35px;">Professional Skills</h2>
+            <div class="top-skills" aos="flip-right">
+                <h3 style = "font-size : 30px;" class="subtitle">Top Skills</h3>
                 <div class="row">
 				 <div class="item col-xs-12 col-sm-4">
                         <div class="item-inner">
-                            <h4 class="skill-name">Data Analysis and Visualization</h4>
-                            <div class="level">Medium, 8 months</div>
-                            <div class="desc">
+                            <h4 style = "font-size : 25px;" class="skill-name">Data Analysis and Visualization</h4>
+                    
+                            <div style = "font-size : 17px;"class="desc">
                                 Started as a hobbie,Then went deeper into the feild and started liking it. Have learnt the diffrent Visualization techniques using plotly, dash, etc. Have many certifications regarding the same signifying the crediblity.
                             </div>
                         </div><!--//item-inner-->
                     </div><!--//item-->
                     <div class="item col-xs-12 col-sm-4">
                         <div class="item-inner">
-                            <h4 class="skill-name">Python &amp; Django</h4>
-                            <div class="level">Medium, 1.5 years</div>
-                            <div class="desc">
+                            <h4 style = "font-size : 25px;" class="skill-name">Python &amp; Django</h4>
+           
+                            <div style = "font-size : 17px;"class="desc">
                                 I've been working with django and python from 1.5 years, developing technologies from standalone application. I have quite an Experience in devloping full satck web applications using Django.
                             </div>
                         </div><!--//item-inner-->
@@ -216,9 +257,9 @@ and effecient way out of the given situation. Lover of innovation and everything
                    
                     <div class="item col-xs-12 col-sm-4">
                         <div class="item-inner">
-                            <h4 class="skill-name">Internet of Things (IoT)</h4>
-                            <div class="level">Medium, 2 years</div>
-                            <div class="desc">
+                            <h4 style = "font-size : 25px;" class="skill-name">Internet of Things (IoT)</h4>
+              
+                            <div style = "font-size : 17px;"class="desc">
                                 I've worked with IoT technologies for the first 2 years of my B.E .I did many projects including Wireless Sensor Networks, Live data update, Cloud data storage.
                             </div>
                         </div><!--//item-inner-->
@@ -227,7 +268,7 @@ and effecient way out of the given situation. Lover of innovation and everything
             </div><!--//top-skills-->
 
             <div class="other-skills">
-                <h3 class="subtitle">Other Skills</h3>
+                <h3 style = "font-size : 30px;" class="subtitle">Other Skills</h3>
                 <div class="misc-skills">
                     <span class="skill-tag">HTML5</span>
                     <span class="skill-tag">CSS3</span>
@@ -256,7 +297,7 @@ and effecient way out of the given situation. Lover of innovation and everything
         </section><!--//skills-section-->
 
         <section id="testimonials-section" class="testimonials-section section">
-            <h2 class="section-title">Achievements</h2>
+            <h2 style = "font-size : 35px; "class="section-title">Achievements</h2>
 
             <div id="testimonials-carousel" class="testimonials-carousel carousel slide" data-ride="carousel">
 
@@ -320,7 +361,7 @@ and effecient way out of the given situation. Lover of innovation and everything
 
 
         <section id="portfolio-section" class="portfolio-section section">
-            <h2 class="section-title">Projects</h2>
+            <h2 style = "font-size : 35px; " class="section-title">Projects</h2>
             <ul id="filters" class="filters clearfix">
                 
             </ul><!--//filters-->
@@ -328,44 +369,44 @@ and effecient way out of the given situation. Lover of innovation and everything
                     <div class="item backend frontend col-md-6 col-xs-12 ">
                     <div  class="item-inner">
                         <figure class="figure">
-                            <img class="img-responsive" src="{% static 'images/pothole.jpg' %}" alt="" />
+                            <img class="img-responsive" src="/static/images/pothole.jpg" alt="" />
                         </figure>
                         <div style = "padding-left : 25px; padding-bottom : 30px ;padding-right : 25px;">
-                            <h3 class="sub-title">Pothole Detection and Prediction</a></h3>
-                            <div class="meta"><u> Technology: Python, Machine Learning, NodeMCU, Sensors, Arduino IDE.</u><br><br>
+                            <h3 style = "font-size : 25px; " class="sub-title">Pothole Detection and Prediction</a></h3>
+                            <div style = "font-size : 17px; "class="meta"><u style = "color : #808080; font-size : 20px; text-decoration : none;"> TechStack: Python, Machine Learning, NodeMCU, Sensors, Arduino IDE.</u><br><br>
                                In today’s world, the most common problem found while travelling is Potholes. Many of the accidents happen due to potholes on the roads. So, we try to build up a smart solution to the problem
                                <br><br> The optimal distribution of resources for road repairs is possible by providing the availability of comprehensive and objective real time data about the state of the roads. 
-                                    <br><br>Various sensors are used in the system to detect the pothole and send the live dataeed to a well maintained cloud based database.
+                                    <br><br>Various sensors are used in the system to detect the pothole and send the live dataeed to a well maintained cloud based database.<br><br>
 									</div>
              </div><!--//content-->
-                        
+                        <button class = button onclick="window.location.href='';" style="font-size:24px;background-color :black;color : white;">View on <i class="fa fa-github"></i></button>
                     </div><!--//item-inner-->
                 </div><!--//item-->
                 <div  class="item backend frontend col-md-6 col-xs-12 ">
                     <div  class="item-inner">
                         <figure class="figure">
-                            <img class="img-responsive" src="{% static 'images/fvrs.png' %}" alt="" />
+                            <img class="img-responsive" src="/static/images/fvrs.png" alt="" />
                         </figure>
                         <div style = "padding-left : 25px; padding-bottom : 30px ;padding-right : 25px;">
-                            <h3 class="sub-title">Finger Vein Recognition System</a></h3>
-                            <div class="meta"><u>Technology used :Matlab, Infra-red imaging, Image Processing, HTML, CSS, DJANGO, Python</u><br><br>
-                                The main problem in security of the transactions through the debit or credit cards is the PIN security.<br> <br>There are many malpractises and frauds occuring and this is a major concern for privacy and security of the money for the beholder.
+                            <h3 style = "font-size : 25px; " class="sub-title">Finger Vein Recognition System</a></h3>
+                            <div style = "font-size : 17px; " class="meta"><u style = "color : #808080; font-size : 20px; text-decoration : none;">TechStack :Matlab, Infra-red imaging, Image Processing, HTML, CSS, DJANGO, Python</u><br><br>
+                                The main problem in security of the transactions through the debit or credit cards is the PIN security.<br>There are many malpractises and frauds occuring and this is a major concern for privacy and security of the money for the beholder.
                                 <br><br>So instead of the PIN or the OTP, the finger vein patterns can not be replecated and can only be xtracted using and infra red camera.
                                 <br>Also, the vein patterns dispose off, once the person dies and it will help the elderly , who may not be able to remember the PIN's and OTP's.
                                 </div>
 
                         </div><!--//content-->
-                  
+                  <button class = button onclick="window.location.href='https://github.com/nikhilkhaneja/Finger_Vein_Recognition_System';" style="font-size:24px;background-color :black;color : white;">View on <i class="fa fa-github"></i></button>
                     </div><!--//item-inner-->
                 </div><!--//item-->
-                <div  class="item backend frontend col-md-12 col-xs-12 ">
+                <div  class="item backend frontend col-md-6 col-xs-12 ">
                     <div class="item-inner">
                         <figure class="figure">
-                            <img class="img-responsive" src="{% static 'images/bbba.png' %}" alt="" />
+                            <img class="img-responsive" src="/static/images/abba.png" alt="" />
                         </figure>
                         <div style = "padding-left : 25px; padding-bottom : 30px ;padding-right : 25px;" >
-                            <h3  class="sub-title">Vehicle Number Plate Recognition System</a></h3>
-                            <div class="meta"><u>Technology used : Coding in Python, Tesseract OCR, OpenCV, Image Processing</u><br><br>
+                            <h3 style = "font-size : 25px; " class="sub-title">Vehicle Number Plate Recognition System</a></h3>
+                            <div style = "font-size : 17px; " class="meta"><u style = "color : #808080; font-size : 20px; text-decoration : none;">TechStack : Coding in Python, Tesseract OCR, OpenCV, Image Processing</u><br><br>
 							OCR stands for Optical Character Recognition<br>Optical character recognition or optical character reader (OCR) is the electronic or mechanical conversion of images. We have used this technique to read the number plates of the vehilces.
 							<br><br>The tesseract library is an optical character recognition (OCR) tool for Python. That is, it can recognize and read the text embedded from any image. So we’ll use it for identifying the characters inside the number plate.
 							<br><br>Using Image processing, the ROI of the image i.e The number plate is extracted nad then using Tesseract OCR, the contents of plate are extracted and stored in a database.
@@ -374,10 +415,28 @@ and effecient way out of the given situation. Lover of innovation and everything
                             
                             
                         </div><!--//content-->
-
+						<button class = button onclick="window.location.href='';" style="font-size:24px;background-color :black;color : white;">View on <i class="fa fa-github"></i></button>
                     </div><!--//item-inner-->
                 </div><!--//item-->
-               
+               <div  class="item backend frontend col-md-6 col-xs-12 ">
+                    <div class="item-inner">
+                        <figure class="figure">
+                            <img class="img-responsive" src="/static/images/2566.png" alt="" />
+                        </figure>
+                        <div style = "padding-left : 25px; padding-bottom : 30px ;padding-right : 25px;" >
+                            <h3 style = "font-size : 25px; " class="sub-title">My Personal Portfolio</a></h3>
+                            <div style = "font-size : 17px; " class="meta"><u style = "color : #808080; font-size : 20px; text-decoration : none;" >TechStack : DJANGO, Coding in HTML, CSS, Javascript</u><br><br>
+							Designed and Developed this portfolio from scratch without using any external framewroks and supports. Worked it through in steps, designing the sections, color code and font system.
+							<br><br>Making it responisve a challange,  achieved it. Now it is responsive and adaptive to most of the platforms and devices. The website is built using django as a backend support system
+							<br><br>This website is hosted on a pythonanywhere server.
+                               </div>
+ 
+                            
+                            
+                        </div><!--//content-->
+						<button class = button onclick="window.location.href='https://github.com/nikhilkhaneja/myproject';" style="font-size:24px;background-color :black;color : white;">View on <i class="fa fa-github"></i></button>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
            
 
                 
@@ -391,12 +450,12 @@ and effecient way out of the given situation. Lover of innovation and everything
 
 
 <section id="certification-section" class="certification-section section">
-            <h2 class="section-title">Certifications</h2>
+            <h2 style = "font-size : 35px; " class="section-title">Certifications</h2>
 
             <div class="row">
                 <div class="item col-xs-12 col-sm-12">
                     <div class="item-inner">
-                        <h3 class="degree">  Data Analysis with python</h3>
+                        <h3 style = "font-size : 22px; " class="degree">  Data Analysis with python</h3>
                         <div class="certification-body">
                         </div><!--//education-body-->
                         <div class="desc">
@@ -415,7 +474,7 @@ and effecient way out of the given situation. Lover of innovation and everything
                
                 <div class="item col-xs-12 col-sm-12">
                     <div class="item-inner">
-                        <h3 class="degree">Applied Plotting and Charting</h3>
+                        <h3 style = "font-size : 22px; " class="degree">Applied Plotting and Charting</h3>
                         <div class="education-body">
                  
                         </div><!--//education-body-->
@@ -436,7 +495,7 @@ and effecient way out of the given situation. Lover of innovation and everything
 
 			<div class="item col-xs-12 col-sm-12">
                     <div class="item-inner">
-                        <h3 class="degree">Data Visualization with python</h3>
+                        <h3  style = "font-size : 22px; " class="degree">Data Visualization with python</h3>
                         <div class="education-body">
                  
                         </div><!--//education-body-->
@@ -454,7 +513,7 @@ and effecient way out of the given situation. Lover of innovation and everything
 
 					<div class="item col-xs-12 col-sm-12">
                     <div class="item-inner">
-                        <h3 class="degree">Raspberry PI, full stack Raspbian</h3>
+                        <h3  style = "font-size : 22px; " class="degree">Raspberry PI, full stack Raspbian</h3>
                         <div class="education-body">
                  
                         </div><!--//education-body-->
@@ -478,13 +537,13 @@ and effecient way out of the given situation. Lover of innovation and everything
 
         </section><!--//section-->
         <section id="contact-section" class="contact-section section">
-            <h2 class="section-title">Get in Touch</h2>
-            <div class="intro">
-                <img class="profile-image" src="{% static 'images/BB.jpeg' %}" alt="Nikhil's profile image">
-                <div class="dialog">
+            <h2  style = "font-size : 35px; " class="section-title">Get in Touch</h2>
+            <div  style = "font-size : 17px; "class="intro">
+                <img class="profile-image" src="/static/images/BB.jpeg" alt="Nikhil's profile image">
+                <div  class="dialog">
                     <p>I'm currently working fulltime as an Intern for <a href="http://einsehen.com" target='_blank'>Einsehen</a>, but I'm always open to new opportunities that let me help as much as I can on other projects.</p>
                     <p><strong>I can help with the following:</strong></p>
-                    <ul class="list-unstyled service-list">
+                    <ul class="list-unstyled service-list" >
 					 <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Data Analysis and Mining</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Data Visualization and plotting</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Devloping IoT applications using wireless sensor networks</li>
@@ -493,8 +552,8 @@ and effecient way out of the given situation. Lover of innovation and everything
                        
                         <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Image Processing using OpenCV and Matlab</li>
                     </ul>
-                    <p>Drop me a line at <a href="mailto:nkhaneja09@gmail.com">nkhaneja09@gmail.com</a> or ping me at:</p>
-                    <ul class="social list-inline">
+                    <p>Drop me a line at <a href="mailto:nkhaneja09@gmail.com">nkhaneja09@gmail.com</a> or ping me at </p>
+                    <ul class="social list-inline" style = "text-align : center; ">
                             <li><a href="https://linkedin.com/in/nikhil-khaneja-3001"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                 <li><a href="https://instagram.com/_nikhilkhaneja_"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                 <li><a href="https://facebook.com/khanejanikhil"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
@@ -506,26 +565,30 @@ and effecient way out of the given situation. Lover of innovation and everything
         </section><!--//section-->
 
     </div><!--//wrapper-->
-
-    <footer class="footer text-center">
-        <div class="container">
+</div>
+    <footer style = "background : url(https://crossfitbbros.com/bbros-1/wp-content/uploads/2016/05/black-wall-texture-19.jpg);  width :100%;"class="footer text-center">
+        <div  class="container">
             <large class="copyright">Copyright @<a href="#">Nikhil K. Khaneja </a></large>
         </div><!--//container-->
     </footer>
 
     <!-- Javascript -->
-    <script type="text/javascript" src="{% static 'plugins/jquery-1.12.4.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'plugins/bootstrap/js/bootstrap.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'plugins/back-to-top.js' %}"></script>
-    <script type="text/javascript" src="{% static 'plugins/jquery-scrollTo/jquery.scrollTo.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'plugins/easy-pie-chart/src/easypiechart.js' %}"></script>
-    <script type="text/javascript" src="{% static 'plugins/easy-pie-chart/src/jquery.plugin.js' %}"></script>
-    <script type="text/javascript" src="{% static 'plugins/easy-pie-chart/src/renderer/canvas.js' %}"></script>
-    <script type="text/javascript" src="{% static 'plugins/imagesloaded.pkgd.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'plugins/isotope.pkgd.min.js' %}"></script>
+    <script type="text/javascript" src="/static/plugins/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="/static/plugins/bootstrap/js/bootstrap.min.js"></script>
+   
+    <script type="text/javascript" src="/static/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="/static/plugins/easy-pie-chart/src/easypiechart.js"></script>
+    <script type="text/javascript" src="/static/plugins/easy-pie-chart/src/jquery.plugin.js"></script>
+    <script type="text/javascript" src="/static/plugins/easy-pie-chart/src/renderer/canvas.js"></script>
+    <script type="text/javascript" src="/static/plugins/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="/static/plugins/isotope.pkgd.min.js"></script>
 
     <!-- custom js -->
-    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
-
+    <script type="text/javascript" src="/static/js/main.js"></script>
+	<script>
+	AOS.init({
+  duration: 1200,
+})
+	</script>
 </body>
 </html>
