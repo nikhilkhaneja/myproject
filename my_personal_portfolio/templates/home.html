@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
@@ -13,7 +12,7 @@
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Responsive Resume/CV／Portfolio Template">
     <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
     <link rel="shortcut icon" href="favicon.ico">
@@ -26,6 +25,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="/static/css/styles-3.css">
     <link id="theme-style" rel="stylesheet" href="/static/css/custom.css">
@@ -90,8 +90,9 @@
 </style>	
 	
 <body>
-  <section id="header-section">
+  <section id="header-section" style = "background-color:#ffffff">
     <header class="header">
+     
         <div class="top-bar container-fluid">
             <!--<div class="actions">
                 <a class="btn hidden-xs" href="mailto:someone@example.com"><i class="fa fa-paper-plane" aria-hidden="true"></i> Hire Me</a>
@@ -103,8 +104,8 @@
         <div class="intro ">
             <div class="container text-center ">
                 <img class="profile-image" src="/static/images/three.jpg" alt="Nikhil's profile image">
-                <h1 class="name">Nikhil K. Khaneja</h1>
-                <div class="title">Data Scientist at Einsehen | IoT Enthusiast</div>
+                <h1 style = "font-size: 90px" class="name">Nikhil K. Khaneja</h1>
+                <div style = "font-size: 27px" class="title">Data Science and IoT Enthusiast</div>
                 <div class="profile">
                     <p> A techonphile, solution-oreinted
 data scientist and analyst and Iot enthusiast,
@@ -128,11 +129,12 @@ and effecient way out of the given situation. Lover of innovation and everything
                 </ul>
             </div><!--//container-->
         </div><!--//contact-info-->
-
+   
         <div class="page-nav-space-holder hidden-xs">
             <div id="page-nav-wrapper" class="page-nav-wrapper text-center">
                 <div class="container">
                     <ul id="page-nav" class="nav page-nav list-inline">
+                        <li><a href = "static/resume.pdf" download>Download Resume</a></li>
 						<li><a class="scrollto" href="#header-section">Home</a></li>
                         <li><a class="scrollto" href="#experiences-section">Experiences</a></li>
                         <li><a class="scrollto" href="#education-section">Education</a></li>
@@ -158,25 +160,27 @@ and effecient way out of the given situation. Lover of innovation and everything
                 <div class="item">
                     <div class="work-place">
                        <p>
-                            <h3 style = "font-size : 30px;"class="place"><b>Data Science intern at Einsehen</b></h3>
+                            <h3 style = "font-size : 30px;"class="place"><b>Data Science intern at <a href="http://www.einsehen.com/" target='_blank'>Einsehen</a></b></h3>
                             <i  class="fa fa-map-marker" aria-hidden="true"></i>Munich, Germany
                         </p>
                     <div class="job-meta">
                         <div style = "font-size : 25px;" class="title">Intern</div>
-                        <div class="time">April, 2020 - Present</div>
+                        <div class="time">April, 2020 - July, 2020</div>
                     </div>
                     <!--//job-meta-->
-                    <div style = "font-size : 18px;" class="job-desc">
-                        <p>Working as a Data Scientist.<br>
-                            Working as as intern on producing analytical solution using opensource technologies with opensource data.<br>
-							Developed a full stack weeb application to build a dashboard for the data.</p>
+                    <div style = "font-size : 18px; text-align: justify;" class="job-desc">
+                        <p>Worked as a Data Scientist.<br>
+                            Worked as as intern on producing analytical solution using opensource technologies with opensource data and
+							built a full stack Dashboard using open-source Fusioncharts-a Javascript Library for Data Visualization.<br>
+                            Performed Data Cleaning and Filtering, Data Analysis using Scikit-learn, Pandas and Numpy.
+                        Used Django as a backend support for the front built using HTML5, CSS3, Javascript and hosted on an Apache Tomcat Server.</p>
 
-                        <p>Technologies and Language used:</p>
+                        <p>Techstack and Languages:</p>
                         <ul>
 							 <li>Data Analysis</li>
                             <li>Data Visualization: Fusioncharts</li>
                             <li>Backend framework : Django</li>
-                            <li>Language: Python</li>
+                            <li>Scripting Language: Python</li>
                             <li>Frontend Support: HTML, CSS, JS</li>
                            
                             
@@ -188,6 +192,44 @@ and effecient way out of the given situation. Lover of innovation and everything
                
 
             </div><!--//timeline-->
+
+             <div class="timeline1">
+                
+
+                <div class="item">
+                    <div class="work-place">
+                       <p>
+                            <h3 style = "font-size : 30px;"class="place"><b>Machine Learning intern at <a href="https://www.extensussolutions.com/" target='_blank'>Extensus Solutions Pte. Ltd</a></b></h3>
+                            <i  class="fa fa-map-marker" aria-hidden="true"></i>Singapore
+                        </p>
+                    <div class="job-meta">
+                        <div style = "font-size : 25px;" class="title">Intern</div>
+                        <div class="time">August, 2020 - Present</div>
+                    </div>
+                    <!--//job-meta-->
+                    <div style = "font-size : 18px;" class="job-desc">
+                        <p>Working as a Machine Learning Intern.<br>
+                           Working on producing a full fledge Machine Learning applications using libraries such as PyTorch and Tenserflow and deploying the application on AWS Servers.</p>
+
+                        <p>Techstack and Languages:</p>
+                        <ul>
+                            <li>Machine Learning</li>
+                            <li>Image Recognition and Classification</li>
+                            <li>Library Supports: Tenserflow, PyTroch, OpenCV</li>
+                            <li>Backend Database Support : Firebase, AWS</li>
+                            <li>Scripting Language: Python</li>
+                            <li>Frontend Support: HTML, CSS, JS</li>
+                           
+                            
+                        </ul>
+                    </div>
+                    <!--//job-desc-->
+                </div><!--//item-->
+
+               
+
+            </div><!--//timeline-->
+
 
         </section><!--//section-->
 
@@ -238,7 +280,7 @@ and effecient way out of the given situation. Lover of innovation and everything
                 <div class="row">
 				 <div class="item col-xs-12 col-sm-4">
                         <div class="item-inner">
-                            <h4 style = "font-size : 25px;" class="skill-name">Data Analysis and Visualization</h4>
+                            <h4 style = "font-size : 25px;" class="skill-name">Machine Learning and Data Science</h4>
                     
                             <div style = "font-size : 17px;"class="desc">
                                 Started as a hobbie,Then went deeper into the feild and started liking it. Have learnt the diffrent Visualization techniques using plotly, dash, etc. Have many certifications regarding the same signifying the crediblity.
@@ -339,7 +381,7 @@ and effecient way out of the given situation. Lover of innovation and everything
                   <div class="item">
                         <blockquote class="quote">
                             <p><i class="fa fa-quote-left"></i>
-                              <p>Winner of the SLAC fest 2019, organized and conducted byy Amrita school of Engineering.
+                              <p>Winner of the SLAC fest 2019, organized and conducted by Amrita school of Engineering.
 							  <br><p><p><br>
                         <div class="source">
                             <div class="name">-May, 2019</div>
@@ -396,7 +438,7 @@ and effecient way out of the given situation. Lover of innovation and everything
                                 </div>
 
                         </div><!--//content-->
-                  <button class = button onclick="window.location.href='https://github.com/nikhilkhaneja/Finger_Vein_Recognition_System';" style="font-size:24px;background-color :black;color : white;">View on <i class="fa fa-github"></i></button>
+                  <button class = "button" onclick="window.location.href='https://github.com/nikhilkhaneja/Finger_Vein_Recognition_System';" style="font-size:24px;background-color :black;color : white;">View on <i class="fa fa-github"></i></button>
                     </div><!--//item-inner-->
                 </div><!--//item-->
                 <div  class="item backend frontend col-md-6 col-xs-12 ">
@@ -421,20 +463,20 @@ and effecient way out of the given situation. Lover of innovation and everything
                <div  class="item backend frontend col-md-6 col-xs-12 ">
                     <div class="item-inner">
                         <figure class="figure">
-                            <img class="img-responsive" src="/static/images/2566.png" alt="" />
+                            <img class="img-responsive" src="/static/images/cl.jpg" alt="" />
                         </figure>
                         <div style = "padding-left : 25px; padding-bottom : 30px ;padding-right : 25px;" >
-                            <h3 style = "font-size : 25px; " class="sub-title">My Personal Portfolio</a></h3>
-                            <div style = "font-size : 17px; " class="meta"><u style = "color : #808080; font-size : 20px; text-decoration : none;" >TechStack : DJANGO, Coding in HTML, CSS, Javascript</u><br><br>
-							Designed and Developed this portfolio from scratch without using any external framewroks and supports. Worked it through in steps, designing the sections, color code and font system.
-							<br><br>Making it responisve a challange,  achieved it. Now it is responsive and adaptive to most of the platforms and devices. The website is built using django as a backend support system
-							<br><br>This website is hosted on a pythonanywhere server.
+                            <h3 style = "font-size : 25px; " class="sub-title">Movie Genre Prediction using Multi Label Classification</a></h3>
+                            <div style = "font-size : 17px; " class="meta"><u style = "color : #808080; font-size : 20px; text-decoration : none;" >TechStack : Python, OpenCV, Beautiful Soup, Machine Learning</u><br><br>
+							Built a full fledged Machine Learning model, which predicts the movie genre from the movie plot provided as an input. Used Web Scraping tool, beautiful Soup to gather the data of 1000 top rated movies from the IMDB website.
+							<br><br>Used Data cleaning and data filtering techniques, to extact the useful data. Using a multi label classification method and Ridge Regression technique, the genre classification was achieved.
+							<br><br>Substantial results were observed, and wordclouds were formed for each movie genre, to visualize the most common word associated with each one of it.<br>
                                </div>
  
                             
                             
                         </div><!--//content-->
-						<button class = button onclick="window.location.href='https://github.com/nikhilkhaneja/myproject';" style="font-size:24px;background-color :black;color : white;">View on <i class="fa fa-github"></i></button>
+						<button class = button onclick="window.location.href='https://github.com/nikhilkhaneja/Movie-Genre-Classfication';" style="font-size:24px;background-color :black;color : white;">View on <i class="fa fa-github"></i></button>
                     </div><!--//item-inner-->
                 </div><!--//item-->
            
@@ -541,21 +583,26 @@ and effecient way out of the given situation. Lover of innovation and everything
             <div  style = "font-size : 17px; "class="intro">
                 <img class="profile-image" src="/static/images/BB.jpeg" alt="Nikhil's profile image">
                 <div  class="dialog">
-                    <p>I'm currently working fulltime as an Intern for <a href="http://einsehen.com" target='_blank'>Einsehen</a>, but I'm always open to new opportunities that let me help as much as I can on other projects.</p>
+                    <p>I'm currently working fulltime as an Intern for <a href="https://www.extensussolutions.com/" target='_blank'>Extensus Solutions Pte. Ltd</a>, but I'm always open to new opportunities that let me help as much as I can on other projects.</p>
                     <p><strong>I can help with the following:</strong></p>
                     <ul class="list-unstyled service-list" >
+                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Machine Learning</li>
 					 <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Data Analysis and Mining</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Data Visualization and plotting</li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Devloping IoT applications using wireless sensor networks</li>
+
+                     
                         <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Back-end development with Django/Python</li>
                         <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Front-end development with HTML5 , CSS, JS </li>
                        
                         <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Image Processing using OpenCV and Matlab</li>
+
+                        <li><i class="fa fa-check" aria-hidden="true"></i>&nbsp;Devloping IoT applications using wireless sensor networks</li>
                     </ul>
                     <p>Drop me a line at <a href="mailto:nkhaneja09@gmail.com">nkhaneja09@gmail.com</a> or ping me at </p>
                     <ul class="social list-inline" style = "text-align : center; ">
                             <li><a href="https://linkedin.com/in/nikhil-khaneja-3001"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                 <li><a href="https://instagram.com/_nikhilkhaneja_"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+
                 <li><a href="https://facebook.com/khanejanikhil"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
                 <li><a href="https://github.com/nikhilkhaneja"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
                     </ul><!--//social-->
@@ -585,10 +632,6 @@ and effecient way out of the given situation. Lover of innovation and everything
 
     <!-- custom js -->
     <script type="text/javascript" src="/static/js/main.js"></script>
-	<script>
-	AOS.init({
-  duration: 1200,
-})
-	</script>
+	
 </body>
 </html>
